@@ -38,16 +38,19 @@ const Container = styled.div `
 const Wrapper = styled.div `
     display: flex; //makes it horizontal
     justify-content: space-between;
+    //border: 1px solid red;
 
 `
 const Left = styled.div`
     flex: 1; //flex 1: make each of the 3 sections divided evenly. (like doing 100/3)
     align-items: center ;
     display: flex;
+    //border: 1px solid red;
 `
 
 const Center = styled.div`
     flex: 1;
+    //border: 1px solid red;
 `
 const Right = styled.div`
     flex: 1;
@@ -69,7 +72,13 @@ const SearchContainer = styled.div`
     align-items: center;
     padding: 5px;
 `
+//Center NavBar:
 
+const Logo = styled.h1`
+    flex: 1;
+    text-align: center;
+    
+`
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
@@ -97,6 +106,7 @@ const Navbar = () => {
 
             </Left>
             <Center>
+                <Logo>GRIP COMMERCE.</Logo>
 
             </Center>
             <Right>
