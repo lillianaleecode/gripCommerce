@@ -1,8 +1,14 @@
 import React from 'react'
+import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
 
 export const Home = () => {
   return (
-    <Navbar/>
+    <div>
+      <Announcement/>
+      <Navbar/>
+
+    </div>
+    
   )
 }
