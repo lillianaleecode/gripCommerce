@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search'; //needs exact name from Material UI
 import Input from '@mui/material/Input';
 import { createTheme } from '@mui/material/styles'; //for customizing Material
+import Badge from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 //theme: Customizing Material UI:
 const theme = createTheme({
@@ -54,6 +56,11 @@ const Center = styled.div`
 `
 const Right = styled.div`
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; //move to the right
+    margin-right: 25px;
+    //border: 1px solid red;
 `
 //Left NavBar:
 const Languages = styled.span`
@@ -77,7 +84,18 @@ const SearchContainer = styled.div`
 const Logo = styled.h1`
     flex: 1;
     text-align: center;
-    
+
+ 
+`
+
+//Right NavBar:
+
+const MenuItem = styled.div`
+    font-size: 14;
+    cursor: pointer;
+    margin-left: 25px;
+
+ 
 `
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -100,7 +118,7 @@ const Navbar = () => {
                         variant="contained"
                     /> 
 
-                    <SearchIcon>Search Icon</SearchIcon> 
+                    <SearchIcon style={{color:"#FF6FB5", fontSize:16}} >Search Icon</SearchIcon> 
 
                 </SearchContainer>
 
@@ -110,7 +128,13 @@ const Navbar = () => {
 
             </Center>
             <Right>
-                <p>right</p>
+                <MenuItem>REGISTER</MenuItem>
+                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem>
+                    <Badge badgeContent={4} color="primary"/>
+                    <ShoppingCartIcon />
+                </MenuItem>
+                    
 
             </Right>
         </Wrapper>
