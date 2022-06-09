@@ -31,14 +31,17 @@ const theme = createTheme({
 
 //Container: contains whole NavBar:
 const Container = styled.div `
-    height:60px;
+   
     //background-color: ;
     //border: 1px solid red;
+    
 `
 
 //Wrapper: puts the navbar sectioned into 3 parts
 const Wrapper = styled.div `
+    padding: 10px 20px;
     display: flex; //makes it horizontal
+    align-items: center;
     justify-content: space-between;
     //border: 1px solid red;
 
@@ -47,6 +50,7 @@ const Left = styled.div`
     flex: 1; //flex 1: make each of the 3 sections divided evenly. (like doing 100/3)
     align-items: center ;
     display: flex;
+    align-items: center
     //border: 1px solid red;
 `
 
@@ -69,7 +73,6 @@ const Languages = styled.span`
     margin-right: 5px;
     margin-left: 5px;
     align-items: center;
-    padding: 5px;
 `
 
 const SearchContainer = styled.div`
@@ -84,6 +87,7 @@ const SearchContainer = styled.div`
 const Logo = styled.h1`
     flex: 1;
     text-align: center;
+    font-weight: bold;
 
  
 `
@@ -94,6 +98,7 @@ const MenuItem = styled.div`
     font-size: 14;
     cursor: pointer;
     margin-left: 25px;
+    
 
  
 `
