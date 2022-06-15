@@ -21,3 +21,21 @@ export const sliderItems = [
       bg: "fbf0f4",
     },
   ];
+
+  export const categories = [
+    {
+      id: 1,
+      img: "https://img.freepik.com/free-photo/cosmetic-bottle-cream-product-mockup-set-concept-beauty-marketing-pastel-3d-rendering_116858-170.jpg",
+      title: "BODY",
+    },
+    {
+      id: 2,
+      img: "https://img.freepik.com/free-photo/natural-cosmetic-cream-with-wheat-extract_186260-1543.jpg",
+      title: "HANDS",
+    },
+    {
+      id: 3,
+      img: "https://assets.vogue.in/photos/5ebe266d1e1bf8da0f205074/2:3/w_2560%2Cc_limit/GettyImages-1129339147.jpg",
+      title: "SELF CARE",
+    },
+  ];
