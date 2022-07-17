@@ -1,29 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// import { createTheme } from '@mui/material/styles'; //for customizing Material
-
-
-//theme: Customizing Material UI:
-// const theme = createTheme({
-//   status: {
-//     danger: '#e53e3e',
-//   },
-
-//   palette: {
-//             lila: {
-//             main: '#AB46D2',
-//             darker: '#053e85',
-//             },
-//             pink: {
-//             main: '#FF6FB5',
-//             contrastText: '#fff',
-//             },
-//   },
-
-// });
-
- //git practice
 
 ////&&&&&&&&&&&&&&&&&&&&&&&&&&&& 
 //STYLES (using styled-components)
